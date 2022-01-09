@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+@font-face {
+  font-family: "Beauty Mountains";
+  src: url(../Fonts/Beauty\ Mountains\ Personal\ Use.ttf) format("trueType");
+  font-weight: 900;
+  font-style: normal;
+}
+** {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: relative;
+  background-image: url(/img/pirog_fon.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-top: 0.9375rem;
+}
+.header-nav-logo {
+  font-family: "Philosopher", sans-serif;
+  font-size: 2.1875rem;
+  padding-left: 13.125rem;
+}
+.header-nav-logo span {
+  color: #f24da8;
+}
+.header-nav-bar {
+  padding-left: 26.5625rem;
+  font-size: 1.03125rem;
+}
+.header-nav-bar-row {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.header-nav-bar-row li {
+  padding: 0.625rem 1.875rem;
+  transition: 0.3s;
+}
+.header-nav-bar-row li:hover {
+  background-color: rgba(153, 153, 153, 0.404);
+  color: #f24da8;
+  cursor: pointer;
+}
+.header-nav-buy {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 3.125rem;
+}
+.header-nav-buy i {
+  font-size: 1.25rem;
+  position: relative;
+}
+.header-nav-buy-coint {
+  position: absolute;
+  left: 0.625rem;
+  top: 0.625rem;
+  min-width: 0.9375rem;
+  min-height: 0.9375rem;
+  background-color: #f24da8;
+  color: white;
+  border-radius: 100%;
+  font-size: 0.6875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+}
+
+.header-maine {
+  display: flex;
+  position: relative;
+}
+.header-maine-conten {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 12.5rem 0 9.375rem 12.5rem;
+}
+.header-maine-conten-header {
+  font-family: Beauty Mountains, sans-serif;
+  font-size: 4.6875rem;
+  font-style: italic;
+  color: black;
+  white-space: nowrap;
+}
+.header-maine-conten-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.03125rem;
+  margin-top: 3.125rem;
+  color: #999999;
+}
+.header-maine-conten-button {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.6875rem;
+  height: 3.125rem;
+  background-color: #f24da8;
+  border-radius: 0.3125rem;
+  border: transparent;
+  margin-top: 3.125rem;
+  color: white;
+  text-decoration: none;
+}
+
+.header-slider {
+  position: absolute;
+  bottom: -7.8125rem;
+  right: 5.625rem;
+}
+.header-slider .header-slider-conteiner {
+  overflow: hidden;
+}
+.header-slider-track {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 37.5rem;
+  transition: 1s;
+}
+.header-slider-track .slider-item {
+  display: flex;
+  justify-content: center;
+}
+.header-slider-track .slider-item img {
+  max-width: 9.375rem;
+  background-color: #f24da8;
+  min-height: 8.75rem;
+  border-radius: 0.3125rem;
+}
+.header-slider button {
+  border: transparent;
+  background-color: transparent;
+  text-align: center;
+  font-size: 2.1875rem;
+  opacity: 0.4;
+  padding: 1.5625rem 0.625rem;
+  cursor: pointer;
+}
+
+.btn-prev {
+  position: absolute;
+  left: -4.6875rem;
+  top: 1.875rem;
+}
+
+.btn-next {
+  position: absolute;
+  right: -4.6875rem;
+  top: 1.875rem;
+}
+
+.maine {
+  margin: 15.625rem auto 0.625rem auto;
+}
+.maine-conteiner {
+  margin: 0 1.5625rem 0 1.5625rem;
+  width: 73.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maine-conteiner-video {
+  min-width: 30rem;
+  height: 31.875rem;
+  background-color: #f24da8;
+  border-radius: 1.5625rem 1.5625rem 0 0;
+}
+.maine-conteiner-ourFood {
+  padding-left: 7.8125rem;
+  padding-top: 4.375rem;
+}
+.maine-conteiner-ourFood-header {
+  font-family: Beauty Mountains, sans-serif;
+  font-size: 2.8125rem;
+  font-style: italic;
+  color: black;
+  white-space: nowrap;
+}
+.maine-conteiner-ourFood-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.03125rem;
+  color: #999999;
+}
+.maine-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 11.25rem;
+}
+.maine-gallery-header {
+  width: 100%;
+  text-align: center;
+}
+.maine-gallery-header-head {
+  font-family: Beauty Mountains, sans-serif;
+  font-size: 2.8125rem;
+  font-style: italic;
+  color: black;
+}
+.maine-gallery-header-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.03125rem;
+  color: #999999;
+}
+.maine-gallery .pictureVisible {
+  height: 76.5625rem;
+}
+.maine-gallery-picture {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 73.75rem;
+  height: 51.5625rem;
+  overflow: hidden;
+  transition: 0.8s;
+}
+.maine-gallery-picture-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #f24da8;
+  min-width: 22.5rem;
+  min-height: 24.0625rem;
+  margin: 0.9375rem;
+  border-radius: 0.9375rem 0.9375rem 0 0;
+}
+.maine-gallery-picture-row-price {
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.5625rem;
+  color: rgba(255, 255, 255, 0.8);
+  padding-bottom: 1.5625rem;
+}
+.maine-gallery-picture-row-price P {
+  margin: 0;
+}
+.maine-gallery-seeMore {
+  margin: 0 auto;
+}
+.maine-gallery-seeMore-button {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.03125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.6875rem;
+  height: 3.125rem;
+  border-radius: 0.3125rem;
+  border: 0.1041666667rem solid #f24da8;
+  margin-top: 3.125rem;
+  color: #f24da8;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/footer.png);
+  flex-direction: column;
+}
+.footer-conteiner {
+  display: flex;
+  width: 73.75rem;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.0625rem;
+}
+.footer-conteiner i {
+  font-size: 1.09375rem;
+  padding-right: 0.3125rem;
+}
+.footer-conteiner-cake {
+  cursor: pointer;
+}
+.footer-conteiner-cake-logo {
+  font-family: "Philosopher", sans-serif;
+  font-size: 2.1875rem;
+}
+.footer-conteiner-cake-logo span {
+  color: #f24da8;
+}
+.footer-conteiner-cake-icons {
+  display: flex;
+}
+.footer-conteiner-cake-icons i {
+  font-size: 1.875rem;
+  padding-left: 0.9375rem;
+  color: #575757;
+  transition: 0.5s;
+}
+.footer-conteiner-cake-icons i:hover {
+  color: #f24da8;
+}
+.footer-conteiner-home {
+  cursor: pointer;
+}
+.footer-conteiner-getStarted {
+  cursor: pointer;
+}
+.footer-conteiner-terms {
+  cursor: pointer;
+}
+.footer-copyright {
+  font-family: "Poppins", sans-serif;
+  margin-top: 6.25rem;
+  font-size: 0.90625rem;
+  color: rgba(87, 87, 87, 0.7);
+}
+
+@media (min-width: 1px) and (max-width: 992px) {
+  .wrapper {
+    max-width: 56.25rem;
+    margin: 0;
+  }
+
+  .header {
+    background-size: 28.125rem;
+    background-position: 100% 50%;
+  }
+  .header-nav {
+    justify-content: center;
+  }
+  .header-nav-logo {
+    padding-left: 0;
+  }
+  .header-slider {
+    right: 50%;
+    transform: translate(50%);
+  }
+
+  .header-nav-bar {
+    padding-left: 1.5625rem;
+  }
+
+  .header-maine-conten {
+    padding: 6.25rem 0 4.6875rem 3.125rem;
+  }
+  .header-maine-conten-header {
+    font-size: 2.8125rem;
+  }
+
+  .maine {
+    width: 56.25rem;
+  }
+  .maine-conteiner {
+    width: 53.125rem;
+  }
+  .maine-conteiner-video {
+    min-width: 23.75rem;
+    height: 26.5625rem;
+  }
+  .maine-conteiner-ourFood {
+    padding-left: 1.5625rem;
+    padding-top: 0.3125rem;
+  }
+  .maine-conteiner-ourFood a {
+    margin: 0;
+  }
+  .maine .pictureVisible {
+    height: 59.375rem;
+  }
+  .maine-gallery {
+    align-items: center;
+    margin-top: 4.6875rem;
+  }
+  .maine-gallery-picture {
+    width: 53.125rem;
+    height: 40.3125rem;
+    justify-content: center;
+  }
+  .maine-gallery-picture-row {
+    min-width: 15.625rem;
+    min-height: 18.75rem;
+    border-radius: 0.625rem 0.625rem 0 0;
+    margin: 0.625rem;
+  }
+
+  .footer-conteiner {
+    width: 56.25rem;
+  }
+  .footer-copyright {
+    margin-top: 0;
+    font-size: 0.625rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .wrapper {
+    max-width: 75rem;
+  }
+
+  .header {
+    background-size: 37.5rem;
+    background-position: 80% 50%;
+  }
+
+  .header-nav-bar {
+    padding-left: 4.6875rem;
+  }
+
+  .header-maine-conten {
+    padding: 6.25rem 0 4.6875rem 6.25rem;
+  }
+  .header-maine-conten-header {
+    font-size: 3.125rem;
+  }
+}
