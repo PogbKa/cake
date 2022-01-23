@@ -1,14 +1,18 @@
 let position = 0;
-    const slidesToShow = 3;
-    const slidesToScroll = 2;
+    let slidesToShow = 3;
+    let  slidesToScroll = 2;
 
-
+    const wrapper = document.querySelector(".wrapper");
     const container = document.querySelector(".header-slider-conteiner");
     const track = document.querySelector(".header-slider-track");
     const btnPrev = document.querySelector(".btn-prev");
     const btnNext = document.querySelector(".btn-next");
     const items = document.querySelectorAll(".slider-item");
     const itemCount = items.length;
+    if (wrapper.clientWidth < 600) {
+        slidesToShow = 1;
+        slidesToScroll = 1;
+    }
     const itemWidth = container.clientWidth / slidesToShow;
     const movePosition = slidesToScroll * itemWidth;
     items.forEach((item) =>{
@@ -71,5 +75,6 @@ let position = 0;
                 if ((i == 0) || (i == 1)) {
                     picture[i].style.minWidth = picture[i].clientWidth+(picture[i].clientWidth/1.8)+"px";
                 }
-        }}
- /// -------  делаем ширину больше в картинках-----///
+        }} 
+
+     /// -------  делаем ширину больше в картинках-----///
