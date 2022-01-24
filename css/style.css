@@ -351,22 +351,30 @@ a {
   }
 
   .header {
-    background-size: 28.125rem;
-    background-position: 100% 50%;
+    background-size: 21.875rem;
+    background-position: 100% 25%;
     position: relative;
   }
   .header-nav {
     justify-content: center;
   }
+  .header-nav .headerNavVisible {
+    right: 0;
+  }
   .header-nav-bar {
-    display: none;
+    z-index: 10;
+    display: flex;
     width: 100%;
+    height: 100%;
     padding: 0;
     position: absolute;
-    right: 0;
+    right: -100%;
     top: 0;
+    background-color: rgba(153, 153, 153, 0.9);
+    transition: all 0.4s;
   }
   .header-nav-bar-row {
+    width: 100%;
     flex-direction: column;
     align-items: center;
     padding: 0;
@@ -391,6 +399,22 @@ a {
     font-size: 3.125rem;
     justify-content: center;
   }
+  .header-nav-button .bi-x-lg {
+    display: none;
+    z-index: 10;
+  }
+  .header-nav-button i {
+    position: absolute;
+    left: 1.5625rem;
+    top: 1.875rem;
+    font-size: 2.1875rem;
+  }
+  .header-nav .buttonLg {
+    display: flex;
+  }
+  .header-nav .buttonList {
+    display: none;
+  }
   .header-maine {
     display: flex;
     flex-direction: column;
@@ -399,11 +423,14 @@ a {
   .header-maine-conten {
     width: 90%;
     padding: 0;
-    align-items: flex-start;
-    margin: 6.25rem 0 0 0;
+    align-items: center;
+    margin: 3.125rem 0 0 0;
   }
   .header-maine-conten-header {
-    font-size: 3.125rem;
+    font-size: 2.8125rem;
+  }
+  .header-maine-conten-text {
+    padding-left: 1.5625rem;
   }
   .header-slider {
     width: 100%;
@@ -444,7 +471,7 @@ a {
     margin-top: 0.625rem;
   }
   .maine-conteiner-ourFood-text p {
-    padding: 0 3.125rem 0 3.125rem;
+    padding: 0 1.5625rem 0 1.5625rem;
   }
   .maine-conteiner-video {
     min-width: 90%;
@@ -455,6 +482,12 @@ a {
   .maine-gallery {
     margin-top: 4.6875rem;
     max-width: 100%;
+  }
+  .maine-gallery-header-text {
+    padding: 0 1.5625rem 0 1.5625rem;
+  }
+  .maine-gallery-header-text p {
+    text-align: left;
   }
   .maine-gallery .pictureVisible {
     height: 43.125rem;
