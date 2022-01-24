@@ -9,6 +9,7 @@
 ** {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -344,8 +345,9 @@ a {
 
 @media (min-width: 1px) and (max-width: 576px) {
   .wrapper {
-    width: 36.875rem;
+    width: auto;
     margin: 0;
+    max-width: 100%;
   }
 
   .header {
@@ -404,7 +406,7 @@ a {
     font-size: 3.125rem;
   }
   .header-slider {
-    width: 31.25rem;
+    width: 100%;
     right: 50%;
     bottom: -20.3125rem;
     transform: translate(50%);
@@ -420,15 +422,15 @@ a {
     transform: translateY(-50%);
   }
   .header-slider-track .slider-item img {
-    max-width: 18.75rem;
+    max-width: 17.8125rem;
   }
 
   .maine {
-    width: 36.875rem;
+    max-width: 100%;
     margin-top: 22.8125rem;
   }
   .maine-conteiner {
-    width: 36.875rem;
+    max-width: 100%;
     flex-direction: column;
     margin: 0;
   }
@@ -444,23 +446,40 @@ a {
   .maine-conteiner-ourFood-text p {
     padding: 0 3.125rem 0 3.125rem;
   }
+  .maine-conteiner-video {
+    min-width: 90%;
+  }
+  .maine-conteiner-video video {
+    min-width: 100%;
+  }
   .maine-gallery {
-    width: 36.875rem;
+    margin-top: 4.6875rem;
+    max-width: 100%;
+  }
+  .maine-gallery .pictureVisible {
+    height: 43.125rem;
   }
   .maine-gallery-picture {
-    width: 36.875rem;
-    height: 35.9375rem;
+    max-width: 100%;
+    height: 21.25rem;
   }
   .maine-gallery-picture-row {
-    min-width: 16.25rem;
-    min-height: 16.25rem;
+    min-width: 47%;
+    min-height: 10rem;
+    margin: 0.3125rem;
+  }
+  .maine-gallery-picture-row p {
+    font-size: 0.9375rem;
+  }
+  .maine-gallery-seeMore button {
+    margin-top: 0.9375rem;
   }
 
   .footer {
     margin-top: 1.5625rem;
   }
   .footer-conteiner {
-    width: 36.875rem;
+    max-width: 100%;
     align-items: flex-start;
     font-size: 0.71875rem;
   }
