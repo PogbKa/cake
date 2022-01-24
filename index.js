@@ -78,3 +78,16 @@ let position = 0;
         }} 
 
      /// -------  делаем ширину больше в картинках-----///
+    
+    const buttonMenu = document.querySelector('.header-nav-button');
+    const headerNav = document.querySelector('.header-nav-bar');
+    const buttonMenuList = document.querySelector('.bi-list');
+    const buttonMenuLg = document.querySelector('.bi-x-lg');
+
+     buttonMenu.addEventListener('click', () => {
+         console.log('1');
+         headerNav.classList.toggle('headerNavVisible');
+         buttonMenuList.classList.toggle('buttonList');
+         buttonMenuLg.classList.toggle('buttonLg');
+    })
+    
