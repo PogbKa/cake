@@ -188,8 +188,11 @@ a {
 .maine-conteiner-video {
   min-width: 30rem;
   height: 31.875rem;
-  background-color: #f24da8;
   border-radius: 1.5625rem 1.5625rem 0 0;
+}
+.maine-conteiner-video video {
+  min-width: 30rem;
+  height: 31.875rem;
 }
 .maine-conteiner-ourFood {
   padding-left: 7.8125rem;
@@ -341,7 +344,7 @@ a {
 
 @media (min-width: 1px) and (max-width: 576px) {
   .wrapper {
-    max-width: 36.875rem;
+    width: 36.875rem;
     margin: 0;
   }
 
@@ -358,7 +361,7 @@ a {
     width: 100%;
     padding: 0;
     position: absolute;
-    right: -100%;
+    right: 0;
     top: 0;
   }
   .header-nav-bar-row {
@@ -403,18 +406,31 @@ a {
   .header-slider {
     width: 31.25rem;
     right: 50%;
-    bottom: -12.5rem;
+    bottom: -20.3125rem;
     transform: translate(50%);
   }
   .header-slider .btn-prev {
     left: 0.3125rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .header-slider .btn-next {
     right: 0.3125rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .header-slider-track .slider-item img {
+    max-width: 18.75rem;
+  }
+
+  .maine {
+    width: 36.875rem;
+    margin-top: 22.8125rem;
   }
   .maine-conteiner {
     width: 36.875rem;
     flex-direction: column;
+    margin: 0;
   }
   .maine-conteiner-ourFood {
     display: flex;
@@ -425,20 +441,19 @@ a {
   .maine-conteiner-ourFood .header-maine-conten-button {
     margin-top: 0.625rem;
   }
+  .maine-conteiner-ourFood-text p {
+    padding: 0 3.125rem 0 3.125rem;
+  }
   .maine-gallery {
-    max-width: 36.875rem;
+    width: 36.875rem;
   }
   .maine-gallery-picture {
-    max-width: 36.875rem;
+    width: 36.875rem;
     height: 35.9375rem;
   }
   .maine-gallery-picture-row {
     min-width: 16.25rem;
-    min-height: 16.5625rem;
-  }
-
-  .maine-conteiner {
-    width: 31.25rem;
+    min-height: 16.25rem;
   }
 
   .footer {
@@ -502,6 +517,10 @@ a {
     width: 53.125rem;
   }
   .maine-conteiner-video {
+    min-width: 23.75rem;
+    height: 26.5625rem;
+  }
+  .maine-conteiner-video video {
     min-width: 23.75rem;
     height: 26.5625rem;
   }
