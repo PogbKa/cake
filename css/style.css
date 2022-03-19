@@ -29,12 +29,10 @@ body {
   background-repeat: no-repeat;
   background-position: right bottom;
 }
-
-a {
+.header a {
   text-decoration: none;
   color: inherit;
 }
-
 .header-nav {
   display: flex;
   align-items: center;
@@ -90,7 +88,9 @@ a {
   justify-content: center;
   font-style: normal;
 }
-
+.header-nav-button {
+  display: none;
+}
 .header-maine {
   display: flex;
   position: relative;
@@ -130,31 +130,16 @@ a {
   text-decoration: none;
 }
 
-.header-slider {
+.maine {
+  position: relative;
+  margin: auto auto 0.625rem auto;
+}
+.maine-slider {
   position: absolute;
-  bottom: -7.8125rem;
-  right: 5.625rem;
+  right: 0.3125rem;
+  top: 0.3125rem;
 }
-.header-slider .header-slider-conteiner {
-  overflow: hidden;
-}
-.header-slider-track {
-  display: flex;
-  justify-content: flex-start;
-  max-width: 37.5rem;
-  transition: 1s;
-}
-.header-slider-track .slider-item {
-  display: flex;
-  justify-content: center;
-}
-.header-slider-track .slider-item img {
-  max-width: 9.375rem;
-  background-color: #f24da8;
-  min-height: 8.75rem;
-  border-radius: 0.3125rem;
-}
-.header-slider button {
+.maine-slider button {
   border: transparent;
   background-color: transparent;
   text-align: center;
@@ -163,24 +148,38 @@ a {
   padding: 1.5625rem 0.625rem;
   cursor: pointer;
 }
-
-.btn-prev {
+.maine-slider .btn-prev {
   position: absolute;
   left: -4.6875rem;
   top: 1.875rem;
 }
-
-.btn-next {
+.maine-slider .btn-next {
   position: absolute;
   right: -4.6875rem;
   top: 1.875rem;
 }
-
-.maine {
-  margin: 15.625rem auto 0.625rem auto;
+.maine-slider-conteiner {
+  overflow: hidden;
+  position: relative;
+}
+.maine-slider-conteiner-track {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 37.5rem;
+  transition: 1s;
+}
+.maine-slider-conteiner-track .slider-item {
+  display: flex;
+  justify-content: center;
+}
+.maine-slider-conteiner-track .slider-item img {
+  max-width: 9.375rem;
+  background-color: #f24da8;
+  min-height: 8.75rem;
+  border-radius: 0.3125rem;
 }
 .maine-conteiner {
-  margin: 0 1.5625rem 0 1.5625rem;
+  margin: 10.9375rem 1.5625rem 0 1.5625rem;
   width: 73.75rem;
   display: flex;
   justify-content: center;
@@ -400,6 +399,9 @@ a {
     font-size: 3.125rem;
     justify-content: center;
   }
+  .header-nav-button {
+    display: block;
+  }
   .header-nav-button .bi-x-lg {
     display: none;
     z-index: 10;
@@ -433,34 +435,35 @@ a {
   .header-maine-conten-text {
     padding-left: 1.5625rem;
   }
-  .header-slider {
-    width: 100%;
-    right: 50%;
-    bottom: -20.3125rem;
-    transform: translate(50%);
-  }
-  .header-slider .btn-prev {
-    left: 0.3125rem;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .header-slider .btn-next {
-    right: 0.3125rem;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .header-slider-track .slider-item img {
-    max-width: 17.8125rem;
-  }
 
   .maine {
     max-width: 100%;
-    margin-top: 22.8125rem;
+    margin-top: 3.125rem;
+    position: relative;
+  }
+  .maine-slider {
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
+  }
+  .maine-slider .btn-prev {
+    left: 9.375rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .maine-slider .btn-next {
+    right: 9.375rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .maine-slider-track .slider-item img {
+    max-width: 17.8125rem;
   }
   .maine-conteiner {
     max-width: 100%;
     flex-direction: column;
     margin: 0;
+    margin-top: 12.5rem;
   }
   .maine-conteiner-ourFood {
     display: flex;
@@ -530,7 +533,7 @@ a {
 }
 @media (min-width: 577px) and (max-width: 992px) {
   .wrapper {
-    max-width: 56.25rem;
+    max-width: 59.375rem;
     margin: 0;
   }
 
@@ -564,7 +567,12 @@ a {
   }
 
   .maine {
-    width: 56.25rem;
+    width: 59.375rem;
+  }
+  .maine-slider {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
   }
   .maine-conteiner {
     width: 53.125rem;
@@ -617,6 +625,17 @@ a {
 @media (min-width: 992px) and (max-width: 1200px) {
   .wrapper {
     max-width: 75rem;
+  }
+  .wrapper .maine {
+    max-width: 75rem;
+  }
+  .wrapper .maine-slider {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .wrapper .maine-gallery-picture {
+    min-width: 75rem;
   }
 
   .header {
