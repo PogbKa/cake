@@ -3,8 +3,8 @@ let position = 0;
     let  slidesToScroll = 2;
 
     const wrapper = document.querySelector(".wrapper");
-    const container = document.querySelector(".header-slider-conteiner");
-    const track = document.querySelector(".header-slider-track");
+    const container = document.querySelector(".maine-slider-conteiner");
+    const track = document.querySelector(".maine-slider-conteiner-track");
     const btnPrev = document.querySelector(".btn-prev");
     const btnNext = document.querySelector(".btn-next");
     const items = document.querySelectorAll(".slider-item");
