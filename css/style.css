@@ -450,23 +450,23 @@ body {
     transform: translateX(50%);
   }
   .maine-slider .btn-prev {
-    left: 3.125rem;
+    left: 0.625rem;
     top: 50%;
     transform: translateY(-50%);
   }
   .maine-slider .btn-next {
-    right: 3.125rem;
+    right: 0.625rem;
     top: 50%;
     transform: translateY(-50%);
   }
-  .maine-slider-track .slider-item img {
-    max-width: 17.8125rem;
+  .maine-slider-conteiner-track .slider-item img {
+    min-width: 17.8125rem;
   }
   .maine-conteiner {
     max-width: 100%;
     flex-direction: column;
     margin: 0;
-    margin-top: 12.5rem;
+    margin-top: 21.875rem;
   }
   .maine-conteiner-ourFood {
     display: flex;
