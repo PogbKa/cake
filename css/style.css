@@ -18,7 +18,7 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  width: 100rem;
+  max-width: 100rem;
   display: flex;
   flex-direction: column;
 }
@@ -47,7 +47,7 @@ body {
   color: #f24da8;
 }
 .header-nav-bar {
-  padding-left: 26.5625rem;
+  padding-left: 23.4375rem;
   font-size: 1.03125rem;
 }
 .header-nav-bar-row {
@@ -133,11 +133,13 @@ body {
 .maine {
   position: relative;
   margin: auto auto 0.625rem auto;
+  max-width: 100rem;
 }
 .maine-slider {
   position: absolute;
-  right: 0.3125rem;
+  right: 30%;
   top: 0.3125rem;
+  transform: translateX(50%);
 }
 .maine-slider button {
   border: transparent;
@@ -180,7 +182,7 @@ body {
 }
 .maine-conteiner {
   margin: 10.9375rem 1.5625rem 0 1.5625rem;
-  width: 73.75rem;
+  width: 72.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,7 +296,7 @@ body {
 }
 .footer-conteiner {
   display: flex;
-  width: 73.75rem;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
   font-family: "Poppins", sans-serif;
@@ -442,17 +444,18 @@ body {
     position: relative;
   }
   .maine-slider {
+    max-width: 100%;
     position: absolute;
     right: 50%;
-    transform: translate(50%);
+    transform: translateX(50%);
   }
   .maine-slider .btn-prev {
-    left: 9.375rem;
+    left: 3.125rem;
     top: 50%;
     transform: translateY(-50%);
   }
   .maine-slider .btn-next {
-    right: 9.375rem;
+    right: 3.125rem;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -567,7 +570,7 @@ body {
   }
 
   .maine {
-    width: 59.375rem;
+    max-width: 59.375rem;
   }
   .maine-slider {
     position: absolute;
@@ -615,7 +618,7 @@ body {
   }
 
   .footer-conteiner {
-    width: 56.25rem;
+    max-width: 56.25rem;
   }
   .footer-copyright {
     margin-top: 0;
